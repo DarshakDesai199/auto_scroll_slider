@@ -7,7 +7,7 @@
 
 ## Preview
 
-![Alt Text](https://github.com/DarshakDesai199/animated_cursor/blob/main/screenRecoding/preview.gif)
+![Alt Text](https://github.com/DarshakDesai199/auto_scroll_slider/blob/main/preview/preview.gif)
 
 ## auto scroll slider Package
 
