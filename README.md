@@ -1,4 +1,3 @@
-
 ![Alt Text](https://fluttercommunity.dev/_github/header/Auto-Scroll-Slider)
 
 [![View on GitHub](https://github.com/SimformSolutionsPvtLtd/flutter_showcaseview/workflows/Build/badge.svg?branch=master)](https://github.com/DarshakDesai199/auto_scroll_slider)
@@ -12,12 +11,14 @@
 
 ## auto scroll slider Package
 
-The Auto Scroll Slider package for Flutter provides a convenient solution for creating auto-scrolling image lists with an animated interface, enhancing user experience and visual appeal.
+The Auto Scroll Slider package for Flutter provides a convenient solution for creating
+auto-scrolling image lists with an animated interface, enhancing user experience and visual appeal.
 
 ## Installing
 
 Add dependency to ```pubspec.yaml```
-To use the latest version of `auto_scroll_slider`, add the following line to your `pubspec.yaml`file:
+To use the latest version of `auto_scroll_slider`, add the following line to your `pubspec.yaml`
+file:
 
 ```yaml
 dependencies:
@@ -107,12 +108,19 @@ class MyApp extends StatelessWidget {
 
 ## Support
 
-For any inquiries or issues regarding the Auto Scroll Slider package, feel free to [open an issue](https://github.com/DarshakDesai199/auto_scroll_slider/issues) on GitHub.
+For any inquiries or issues regarding the Auto Scroll Slider package, feel free
+to [open an issue](https://github.com/DarshakDesai199/auto_scroll_slider/issues) on GitHub.
 
+## License
+
+This package is released under
+the [MIT License](https://pub.dev/packages/auto_scroll_slider/license).
 
 ## Additional Information
 
-👍 If you appreciate our solution's value and positive impact on your project,✨ show your support
-with a thumbs up! 🌟 Your feedback fuels our commitment to excellence.💫 Thank you for choosing us!
+👍 We're thrilled that our solution is adding value and positively impacting your project! ✨ Your
+support means the world to us. 🌟 If you're loving the results, show your appreciation with a thumbs
+up! 💫 We're committed to excellence and continuously strive to exceed your expectations. Thank you
+for choosing us! 🚀
 
 **-Darshak Desai**
