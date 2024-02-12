@@ -1,13 +1,13 @@
 ![Alt Text](https://fluttercommunity.dev/_github/header/Auto-Scroll-Slider)
 
 [![View on GitHub](https://github.com/SimformSolutionsPvtLtd/flutter_showcaseview/workflows/Build/badge.svg?branch=master)](https://github.com/DarshakDesai199/auto_scroll_slider)
-[![View on GitHub](https://img.shields.io/pub/v/auto_scroll_slider?label=animated_cursor)](https://pub.dev/packages/auto_scroll_slider)
+[![View on GitHub](https://img.shields.io/pub/v/auto_scroll_slider?label=auto_scroll_slider)](https://pub.dev/packages/auto_scroll_slider)
 [![View on Linkedin](https://img.shields.io/badge/Dev:-Darshak_Desai-blue.svg)](https://in.linkedin.com/in/darshak-desai-17251823b)
 [![View on Github](https://img.shields.io/pub/points/auto_scroll_slider?color=FF474C&label=pub%20points)](https://pub.dev/packages/auto_scroll_slider/score)
 
 ## Preview
-
-![Alt Text](https://github.com/DarshakDesai199/animated_cursor/blob/main/screenRecoding/preview.gif)
+    
+![Alt Text](https://github.com/DarshakDesai199/auto_scroll_slider/blob/main/preview/preview.gif)
 
 ## auto scroll slider Package
 
@@ -22,7 +22,7 @@ file:
 
 ```yaml
 dependencies:
-  auto_scroll_slider: ^1.0.0
+  auto_scroll_slider: ^1.0.1
 ```
 
 Install it
@@ -42,8 +42,7 @@ import 'package:auto_scroll_slider/auto_scroll_slider.dart';
 ## Usage
 
 ```dart
-AutoScroll
-(
+AutoScroll(
 length: list.length,
 scrollController: scrollController,
 reverse: true,
@@ -52,9 +51,7 @@ return Image.network(
 list[index],
 height: 250,
 width: 400,
-fit: BoxFit.cover,
-);
-},
+fit: BoxFit.cover);}
 );
 ```
 
@@ -76,34 +73,52 @@ fit: BoxFit.cover,
 ## Example
 
 ```dart
-import 'package:animated_cursor/animated_cursor.dart';
+import 'package:auto_scroll_slider/auto_scroll_slider.dart';
+import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
   @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  List A = [];
+
+  ScrollController scrollController = ScrollController();
+
+  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Animated Cursor',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.red,
-      ),
-      home: AnimatedCursor(
-        // cursor: SystemMouseCursors.alias,
-        circleColor: Colors.red,
-        dotColor: Colors.red,
-        backgroundColor: Colors.black,
-        borderWidth: 1,
-        child: Container(color: Colors.black),
+    return Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Expanded(
+          child: AutoScrollSlider(
+            length: A.length,
+            scrollController: scrollController,
+            itemBuilder: (context, index) {
+              return Padding(
+                padding: const EdgeInsets.symmetric(vertical: 4.0),
+                child: Image.network(
+                  A[index],
+                  height: 250,
+                  width: 400,
+                  fit: BoxFit.cover,
+                ),
+              );
+            },
+          ),
+        ),
       ),
     );
   }
 }
+
 ```
 
 ## Support
